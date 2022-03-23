@@ -1,0 +1,71 @@
+
+import 'chart.js/auto';
+import React from "react";
+import { Radar } from 'react-chartjs-2';
+
+const ChartThree = () =>{
+    return(
+        <>
+        <div className="componentInteriorRadar">
+              <h3>Chart 3: Radar Chart</h3>
+  
+              <div className="SRC Elections">
+              <Radar 
+              data={{
+                 
+                  labels: ['Jessica', 'Ren', 'Tate', 'James', 'Olivia', 'Jarrett'],
+                  datasets: [{
+                      label: '# of Votes',
+                      minBarLength: 20,
+                      data: [12, 19, 10, 15, 11, 13],
+                     
+                      borderColor: [
+                        '#264653',
+                        '#2A9D8F',
+                        '#E9C46A', 
+                        '#F4A261',
+                        '#E76F51',
+                        '#BC412B',
+                      ],
+                      borderWidth: 1,
+                      borderRadius: 20,
+                      hoverBorderColor: [
+                        '#264653',
+                        '#2A9D8F',
+                        '#E9C46A', 
+                        '#F4A261',
+                        '#E76F51',
+                        '#BC412B',
+                      ],
+                      pointStyle: 'circle',
+                      
+                  },
+                  
+                  
+              
+              ],
+              
+              }} 
+              
+              height={400} 
+              width={600} 
+              options={{maintainAspectRatio: false,
+                
+                }}
+              
+              
+              />
+  
+              </div>
+  
+  
+  
+  
+  
+          </div>
+          </>
+    );
+
+}
+
+export default ChartThree
